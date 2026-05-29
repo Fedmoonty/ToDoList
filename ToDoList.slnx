@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="E:/Visual Studio/Proj/ToDoList/Domain/ToDoList.Domain.csproj" />
+  <Project Path="E:/Visual Studio/Proj/ToDoList/ToDoList.Infrastructure/ToDoList.Infrastructure.csproj" />
+  <Project Path="E:/Visual Studio/Proj/ToDoList/ToDoList.Services/ToDoList.Services.csproj" />
+  <Project Path="E:/Visual Studio/Proj/ToDoList/WebApplication1/WebApplication1.csproj" />
+</Solution>
