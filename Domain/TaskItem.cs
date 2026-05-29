@@ -18,18 +18,15 @@ public class TaskItem
     public TaskPriority Priority { get; set; }
 
     public int? CategoryId { get; set; }
-    public Category Category { get; set; } 
-
+    public Category Category { get; set; }
 
     public ICollection<Attachment> Attachments { get; set; } = new List<Attachment>();
-
-    public ICollection<SubTask> SubTasks { get; set; }
-
-    public int UserId { get; set; }
+    public ICollection<SubTask> SubTasks { get; set; } = new List<SubTask>();
 
     public override string ToString()
         => $"Task #{Id}: '{Title}', Status={Status}, Priority={Priority}, Due={DueDate?.ToShortDateString() ?? "—"}";
 }
+
 
 public enum TaskStatus
 {

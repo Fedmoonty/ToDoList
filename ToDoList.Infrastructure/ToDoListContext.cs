@@ -17,7 +17,6 @@ public class ToDoListContext(DbContextOptions<ToDoListContext> options) : DbCont
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(ToDoListContext).Assembly);
     }
 
-
     //dotnet ef migrations add InitialCreate --project FinalProject.Infrastructure --startup-project FinalProject.Infrastructure
     //dotnet ef database update InitialCreate --project FinalProject.Infrastructure --startup-project FinalProject.Infrastructure
 }

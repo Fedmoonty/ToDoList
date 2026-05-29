@@ -1,7 +1,15 @@
+using ToDoList.Infrastructure;
+using Microsoft.EntityFrameworkCore;
+using ToDoList.Domain;
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<ToDoListContext>(options => 
+    {
+        options.UseNpgsql(configuration.GetConnectionString(nameof(ToDoListContext)));
+    });
 
 var app = builder.Build();
 
